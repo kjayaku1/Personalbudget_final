@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install:all": "npm-run-all --sequential install:server install:client",
-    "install:server": "cd server && npm install",
+    "install:server": "npm install",
     "install:client": "cd ./client && npm install",
     "start": "npm run install:all && npm run dev",
     "dev": "npm-run-all --parallel server client",
