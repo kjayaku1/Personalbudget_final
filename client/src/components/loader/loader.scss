@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables.scss";
+
+.loading-overlay {
+  z-index: 1050;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000, $alpha: 0.8) !important;
+  z-index: 9999;
+
+  .spinner-border {
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    vertical-align: -0.125em;
+    border: 0.3em solid $primary-clr;
+    border-right-color: transparent;
+    border-radius: 50%;
+    z-index: 1050;
+    animation: 0.75s linear infinite spinner-border;
+  }
+}
+
+.loading-overlay-grey {
+  z-index: 1050;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  z-index: 9999;
+}

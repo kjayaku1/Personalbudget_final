@@ -1,0 +1,186 @@
+@import './variables.scss';
+
+// font utility
+.txt-bold {
+    font-family: 'montserrat-bold';
+}
+
+.txt-light {
+    font-family: 'montserrat-light';
+}
+
+.txt-medium {
+    font-family: 'montserrat-medium';
+}
+
+.txt-xs {
+    font-size: 0.6rem !important;
+}
+
+.txt-smd {
+    font-size: 0.7rem !important;
+}
+
+.txt-md {
+    font-size: 0.8rem !important;
+}
+
+.txt-xmd {
+    font-size: 1rem;
+}
+
+.txt-lg {
+    font-size: 1.2rem;
+}
+
+.txt-xlg {
+    font-size: 1.5rem;
+}
+
+.txt-xl {
+    font-size: 2rem;
+}
+
+.txt-xxl {
+    font-size: 3rem;
+}
+
+// font color utility
+
+
+.txt-primary {
+    color: $primary-clr
+}
+
+.txt-primary-drk {
+    color: $font-clr-4;
+}
+
+.txt-black-lt {
+    color: $font-clr-7;
+}
+ 
+.txt-grey {
+    color: $font-clr-2;
+}
+
+.txt-grey-drk {
+    color: $font-clr-3;
+}
+
+.txt-grey-lt {
+    color: $font-clr-5;
+}
+
+.txt-grey-ltr {
+    color: $font-clr-6;
+}
+
+.txt-success {
+    color: $success-green;
+}
+
+.txt-error {
+    color: $error-red;
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.txt-yellow {
+    color: #FFCC00;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+
+// Generic
+
+.m-w-100 {
+    min-width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-md-auto {
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        width: auto;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+.cursor-default {
+    cursor: default !important;
+}
+.position-relative {
+    position: relative;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #535353;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.icon {
+    width: 1.5rem
+}
+
+.flex-xlg-row {
+    flex-direction: column;
+    @media screen and (min-width: 1366px) {
+        flex-direction: row;
+    }
+}
+
+.flex-xlg-column {
+    flex-direction: row;
+    @media screen and (min-width: 1366px) {
+        flex-direction: column;
+    }
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.flex-xlg-grow {
+    flex-grow: 1;
+    flex-basis: 50%;
+    @media screen and (min-width: 1366px) {
+        flex-grow: 0;
+        flex-basis: auto;
+    }
+}
+
+.pr-xlg-0 {
+    padding-right: 0;
+    @media screen and (min-width: 1366px) {
+        padding-right: 1rem;
+    }
+}
+
+.pl-xlg-3 {
+    padding-left: 1rem;
+    @media screen and (min-width: 1366px) {
+        padding-left: 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding-left: 0;
+    }
+}
