@@ -19,10 +19,20 @@ function YearlyGraph(props) {
     "Nov",
     "Dec",
   ];
+  const currentYear = moment(date).format("YYYY");
+
 
   let monthsData =
-    monthlyData?.map((month) => month?.totalAmount || 0) ||
-    categories?.map((i) => 0);
+    categories?.map((month) => {
+      let monthData = monthlyData?.find(
+        (data) => data.monthText === month && data.monthYear === currentYear
+      );
+      return monthData ? monthData.totalAmount : 0;
+    }) || categories?.map((i) => 0);
+    
+  // let monthsData =
+  //   monthlyData?.map((month) => month?.totalAmount || 0) ||
+  //   categories?.map((i) => 0);
 
   const options = {
     series: [
